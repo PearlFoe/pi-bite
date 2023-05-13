@@ -5,7 +5,7 @@ Output:
     Seconds: 306.94723200798035
 """
 from math import pi
-import time
+from timeit import timeit
 
 
 def main():
@@ -21,6 +21,4 @@ def main():
 
 
 if __name__ == '__main__':
-    ts = time.time()
-    main()
-    print("Seconds:", time.time() - ts)
+    print("Seconds:", timeit(main, number=1))
