@@ -4,7 +4,7 @@ I was interested, how many digits of the Pi number I can count... Let's see
 **All tests were done on macbook pro m1 (CPU: 10 cores, RAM: 16 GB)**
 
 ## Attempt 1
-I'v used [Gregory's series](https://en.wikipedia.org/wiki/Gregory%27s_series) to check how many digits I can get in about 5 minutes.
+I've used [Gregory's series](https://en.wikipedia.org/wiki/Gregory%27s_series) to check how many digits I can get in about 5 minutes.
 ```
 PI: 3.141592653589793
 Sum: 3.141592653388201
