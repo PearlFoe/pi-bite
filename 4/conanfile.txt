@@ -1,0 +1,6 @@
+[requires]
+mpfr/4.2.1
+
+[generators]
+CMakeDeps
+CMakeToolchain

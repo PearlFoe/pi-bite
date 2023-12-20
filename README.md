@@ -30,5 +30,17 @@ Precision: 301030
 Seconds: 1651.0571850829947
 ```
 
-## Attempt 4 (Comming soon)
-Rewrite code to C and get 1M digits
+## Attempt 4
+Rewrote counting logic in C. GMP used.
+
+## Some pre moves
+```
+cd 4/
+conan install . --output-folder=build --build=missing
+cd build/
+cmake .. -DCMAKE_TOOLCHAIN_FILE=conan_toolchain.cmake -DCMAKE_BUILD_TYPE=Release
+cmake --build .
+```
+
+## Result
+
