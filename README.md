@@ -31,9 +31,9 @@ Seconds: 1651.0571850829947
 ```
 
 ## Attempt 4
-Rewrote counting logic in C. GMP used.
+Rewrote counting logic in C using [MPFR](https://www.mpfr.org/mpfr-current/mpfr.html). Still use [BBP fornula](https://en.wikipedia.org/wiki/Bailey%E2%80%93Borwein%E2%80%93Plouffe_formula).
 
-## Some pre moves
+## Build C code
 ```
 cd 4/
 conan install . --output-folder=build --build=missing
@@ -42,5 +42,7 @@ cmake .. -DCMAKE_TOOLCHAIN_FILE=conan_toolchain.cmake -DCMAKE_BUILD_TYPE=Release
 cmake --build .
 ```
 
-## Result
+## Result (intermediate)
+Got 2.5 speed up in single-threaded run.
 
+TODO: make it parallel.
