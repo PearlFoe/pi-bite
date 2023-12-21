@@ -1,13 +1,9 @@
 from timeit import timeit
-from ctypes import cdll, util, c_uint
+from ctypes import cdll, c_uint
 from concurrent.futures import ProcessPoolExecutor
     
-from gmpy2 import mpfr
 
-
-# count_module = cdll.LoadLibrary(util.find_library("pi-bite"))
 count_module = cdll.LoadLibrary("build/libpi-bite.dylib")
-
 
 
 def main():
