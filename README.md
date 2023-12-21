@@ -42,7 +42,7 @@ cmake .. -DCMAKE_TOOLCHAIN_FILE=conan_toolchain.cmake -DCMAKE_BUILD_TYPE=Release
 cmake --build .
 ```
 
-### Result (intermediate)
-Got 2.5 speed up in single-threaded run (30k precision = 26 sec).
+### Result (WIP)
+It compiles, but... ctype pointers cannot be pickled.
 
-TODO: make it parallel.
+TODO: make it work
