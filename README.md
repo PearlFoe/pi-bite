@@ -33,6 +33,9 @@ Seconds: 1651.0571850829947
 ## Attempt 4
 Rewrote counting logic in C using [MPFR](https://www.mpfr.org/mpfr-current/mpfr.html). Still use [BBP formula](https://en.wikipedia.org/wiki/Bailey%E2%80%93Borwein%E2%80%93Plouffe_formula).
 
+Actualy its impossible (or I didn't find the way) to pass pointers to child process to update value and pass it back. So I decided to
+save value to file and then count sum of result from files in parent process. Its slow, but it's simple and it works.
+
 ### Build C code
 ```
 cd 4/
@@ -42,7 +45,8 @@ cmake .. -DCMAKE_TOOLCHAIN_FILE=conan_toolchain.cmake -DCMAKE_BUILD_TYPE=Release
 cmake --build .
 ```
 
-### Result (WIP)
-It compiles, but... ctype pointers cannot be pickled.
+### Result 
+And the result... al least 8 times slower then 3rd attempt. May be I can get rid of writing result to files using python objects writen in C, but I don'n think it will give significant speen up. So I think I will stop at this point. 
 
-TODO: make it work
+If you interested in this experiment too and have suggesions how to make if faster, feel free to open issue.
+
