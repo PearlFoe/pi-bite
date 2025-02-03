@@ -46,7 +46,7 @@ cmake --build .
 ```
 
 ### Result 
-And the result... al least 8 times slower then 3rd attempt. May be I can get rid of writing result to files using python objects writen in C, but I don'n think it will give significant speen up. So I think I will stop at this point. 
+And the result... at least 8 times slower then 3rd attempt. May be I can get rid of writing result into files using python objects writen in C, but I don'n think it will give significant speed up. So I think I will stop at this point. 
 
 If you interested in this experiment too and have suggesions how to make if faster, feel free to open issue.
 
